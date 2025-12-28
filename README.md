@@ -128,9 +128,9 @@ Aspiring Data Analyst
 
 Indonesia
 
- LinkedIn: [link LinkedIn]
+ LinkedIn: [Agustianto](www.linkedin.com/in/agus-tianto-a305611a5)
 
- GitHub: [link GitHub]
+ GitHub: [agustianto-lab](https://github.com/agustianto-lab)
 
 ##  Final Notes
 
