@@ -77,7 +77,7 @@ The Excel dashboard provides a high-level business summary including:
 * Key performance indicators (KPI cards)
 
 **Dashboard Preview:**
-![Screenshot](screenshots/Coffee_dashboard.jpg)
+![Screenshot](screenshots/Coffee-dashboard.jpg)
 
 ###  Key Insights
 
