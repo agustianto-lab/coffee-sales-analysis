@@ -114,7 +114,7 @@ Based on the analysis, several business recommendations can be proposed:
 
 ##  Tools Used
 
-### Microsoft Excel
+### Microsoft Excel (PivotTables, formulas, dashboard)
 * Data Cleaning
 * Pivot Tables
 * KPI Calculations
