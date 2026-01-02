@@ -132,8 +132,3 @@ Indonesia
 
  GitHub: [agustianto-lab](https://github.com/agustianto-lab)
 
-##  Final Notes
-
-This project is part of my data analytics portfolio and demonstrates my ability to perform business-oriented analysis using Excel.
-
-Feedback and suggestions are welcome.
