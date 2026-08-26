@@ -1,6 +1,6 @@
 # Dashboard Link
 
-**Live Dashboard (Excel Online) ->** [Coffee-sales-Dashboard](https://1drv.ms/x/c/1260dafa43546506/IQSIpYt3F58ETZunHt81uMNqAXz6SYMhvjxqlewMm7GvWUI?em=2&AllowTyping=True&ActiveCell='Dashboard'!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True)
+**Live Dashboard (Excel Online) ->** [Coffee-sales-Dashboard](https://1drv.ms/x/c/1260dafa43546506/IQCIpYt3F58ETZunHt81uMNqAfHFqYqM_ffAAYzyWn0-9Ts?e=JVBd64)
 
 # Raw Data Kagle Link
 
