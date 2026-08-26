@@ -79,6 +79,9 @@ The Excel dashboard provides a high-level business summary including:
 **Dashboard Preview:**
 ![Screenshot](screenshots/Coffee-dashboard.jpg)
 
+**Dashboard Preview:**
+Link Dashboard (https://1drv.ms/x/c/1260dafa43546506/IQCIpYt3F58ETZunHt81uMNqAfHFqYqM_ffAAYzyWn0-9Ts?e=h5fSNG)
+
 ###  Key Insights
 
 Some key insights derived from the analysis:
