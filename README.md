@@ -114,11 +114,10 @@ Berdasarkan analisis tersebut, beberapa rekomendasi bisnis dapat diajukan:
 * KPI Calculation / Perhitungan KPI
 * Desain Dasbor
 
+
 #  Author
 
 **AGUSTIANTO**
-
-Aspiring Data Analyst
 
 Indonesia
 
