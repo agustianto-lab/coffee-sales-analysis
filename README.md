@@ -3,124 +3,116 @@ Excel-based sales analysis &amp; dashboard
 
 
 #  Coffee Sales Analysis – Vending Machine
-##  Project Overview
+##  Gambaran Umum
 
-This project analyzes coffee sales data from a vending machine to understand sales performance, customer behavior, and payment trends.
-The analysis was conducted end-to-end using Microsoft Excel, from data cleaning to dashboard visualization.
-
-The goal of this project is to demonstrate my ability to:
-* Clean and transform raw data
-* Define meaningful business KPIs
-* Build a clear and professional dashboard
-* Translate data into actionable business insights
+Proyek ini menganalisis data penjualan kopi dari mesin penjual otomatis (*vending machine*) untuk memahami kinerja penjualan, perilaku pelanggan, dan tren pembayaran. Analisis dilakukan secara menyeluruh menggunakan Microsoft Excel, mulai dari pembersihan data hingga visualisasi dasbor.
 
 ##  Dataset
 
-* Source: Kaggle – Coffee Sales Dataset
-* Data Type: Transaction-level sales data
-* Granularity: 1 row = 1 transaction
+* Sumber: Kaggle – Coffee Sales Dataset
+* Jenis Data: Data penjualan tingkat transaksi
+* Granularitas: 1 baris = 1 transaksi
 
-### Key Fields:
+### Kolom Utama:
 * Transaction Date & Time
 * Product
 * Payment Method (Card / Cash)
 * Card ID (for repeat customer analysis)
 * Price / Revenue
 
- **Note:** The dataset does not provide a native transaction ID, therefore a transaction ID was created based on row number.
+ **Note:** Dataset tidak menyediakan ID transaksi bawaan, sehingga ID transaksi dibuat berdasarkan nomor baris.
 
-##  Data Analysis Workflow
+##  Alur Kerja
 
-Data Source
-→ Data Cleaning
-→ Feature Engineering
-→ KPI Calculation
-→ Dashboard Visualization
-→ Business Insight & Recommendation
+Sumber Data
+→ Pembersihan Data
+→ Rekayasa Fitur
+→ Perhitungan KPI
+→ Visualisasi Dasbor
+→ Wawasan & Rekomendasi Bisnis
 
-All steps were performed using Microsoft Excel.
+Seluruh tahapan dilakukan menggunakan Microsoft Excel.
 
 
-###  Data Cleaning
+###  Pembersihan Data
 
-The following data preparation steps were performed:
-* Removed empty and invalid rows
-* Standardized date and time formats
-* Handled missing customer identifiers
-* Identified cash transactions (card_id = "-")
-* Trimmed text fields to avoid duplication issues
+Langkah-langkah persiapan data berikut telah dilakukan:
+* Menghapus baris kosong dan tidak valid
+* Menstandarisasi format tanggal dan waktu
+* Menangani identitas pelanggan yang hilang
+* Mengidentifikasi transaksi tunai (card_id = "-")
+* Membersihkan spasi pada kolom teks untuk menghindari masalah duplikasi
 
-###  Feature Engineering
+###  Rekayasa Fitur
 
-Several derived fields were created to support analysis:
-* **Transaction ID** – generated using row number
-* **Month** – extracted from transaction date for trend analysis
-* **Hour** – extracted from transaction time for peak hour analysis
-* **Is_Repeat/Exclude_cash** – classified transactions as Repeat / Single / Cash
-* **Revenue** – calculated per transaction
+Beberapa kolom turunan dibuat untuk mendukung analisis:
+* **Transaction ID** – dibuat menggunakan nomor baris
+* **Month** – diekstrak dari tanggal transaksi untuk analisis tren
+* **Hour** – diekstrak dari waktu transaksi untuk analisis jam sibuk
+* **Is_Repeat/Exclude_cash** – mengklasifikasikan transaksi sebagai Berulang / Tunggal / Tunai
+* **Revenue** – dihitung per transaksi Metrik Utama (KPI)
 
-###  Key Metrics (KPIs)
+###  Metrik Utama (KPI)
 
-The dashboard focuses on the following business KPIs:
+Dasbor berfokus pada KPI bisnis berikut:
 * Total Revenue
 * Total Transactions
-* Average Order Value (AOV)
-* Repeat Customer Rate (Calculated based on card transactions only)
+* Average Order Value / Nilai Pesanan Rata-rata
+* Repeat Customer Rate (Dihitung berdasarkan transaksi kartu saja)
 
-###  Dashboard Overview
+###  Gambaran Umum Dasbor
 
-The Excel dashboard provides a high-level business summary including:
-* Monthly revenue trend
-* Revenue contribution by product
-* Peak transaction hours
-* Payment method distribution
-* Key performance indicators (KPI cards)
+Dasbor Excel ini menyajikan ringkasan bisnis yang mencakup:
+* Monthly revenue trend / Tren pendapatan bulanan
+* Revenue contribution by product / Kontribusi pendapatan berdasarkan produk
+* Peak transaction hours / Puncak jam transaksi
+* Payment method distribution / Distribusi metode pembayaran
+* Key performance indicators (KPI cards) / Indikator kinerja utama
 
-**Dashboard Preview:**
+**Dasbor:**
 ![Screenshot](screenshots/Coffee-dashboard.jpg)
 
 **Link** [Coffee-sales-Dashboard](https://1drv.ms/x/c/1260dafa43546506/IQCIpYt3F58ETZunHt81uMNqAfHFqYqM_ffAAYzyWn0-9Ts?e=JVBd64)
 
-###  Key Insights
+###  Wawasan Utama
 
-Some key insights derived from the analysis:
+Beberapa wawasan utama yang diperoleh dari analisis:
 
-* The analysis shows a total revenue of **$115,432** over the observed period. Revenue fluctuates across months, with noticeable peaks in **October 2024** and **February 2025**, while January recorded the lowest performance. This pattern suggests potential seasonality, which should be considered for inventory planning and promotional timing.
+* Analisis menunjukkan total pendapatan (total revenue) sebesar **$115.432** selama periode pengamatan. Pendapatan berfluktuasi dari bulan ke bulan, dengan lonjakan yang terlihat jelas pada Oktober 2024 dan Februari 2025, sementara Januari mencatat kinerja terendah. Pola ini mengindikasikan adanya potensi faktor musiman yang perlu dipertimbangkan dalam perencanaan inventaris dan penentuan waktu promosi.
 
-* Product analysis reveals that **Americano with Milk** dominates sales volume, while **Espresso** shows consistently low demand. This indicates that not all products contribute equally to revenue, and underperforming products may require pricing, positioning, or promotional adjustments.
+* Analisis produk menunjukkan bahwa **Americano with Milk** mendominasi volume penjualan, sedangkan **Espresso** menunjukkan permintaan yang secara konsisten rendah. Hal ini mengindikasikan bahwa tidak semua produk memberikan kontribusi yang sama terhadap pendapatan, dan produk dengan kinerja rendah mungkin memerlukan penyesuaian harga, pemosisian, atau strategi promosi.
   
-* Analysis shows that **78%** of card transactions originate from repeat customers, demonstrating strong customer loyalty.
-Cash transactions cannot be individually identified, so loyalty analysis focuses on card users.
+* Analisis menunjukkan bahwa **78%** transaksi kartu berasal dari pelanggan yang kembali (**repeat customers**), yang mencerminkan loyalitas pelanggan yang kuat. Transaksi tunai tidak dapat diidentifikasi secara individual, sehingga analisis loyalitas berfokus pada pengguna kartu.
 
-* Payment method analysis shows that card payments account for **98%** of all transactions, indicating a strong preference for cashless payments and highlighting the importance of reliable digital payment systems.
+* Analisis metode pembayaran menunjukkan bahwa pembayaran dengan kartu mencakup **98%** dari seluruh transaksi, yang mengindikasikan preferensi kuat terhadap pembayaran nontunai serta menyoroti pentingnya sistem pembayaran digital yang baik.
   
-* Transaction volume peaks around **10 AM**, likely corresponding to break times or pre-work consumption, while early morning hours show minimal activity.
+* Volume transaksi mencapai puncaknya sekitar pukul **10.00 pagi**, kemungkinan bertepatan dengan waktu istirahat atau konsumsi sebelum mulai bekerja, sementara aktivitas pada pagi-pagi sekali terpantau minim.
 
-###  Business Recommendations
+###  Rekomendasi Bisnis
 
-Based on the analysis, several business recommendations can be proposed:
+Berdasarkan analisis tersebut, beberapa rekomendasi bisnis dapat diajukan:
 
-* Improve the performance of low-selling products (e.g., Espresso) through bundling, limited-time discounts, or menu repositioning
+* Meningkatkan kinerja produk dengan penjualan rendah (misalnya, **Espresso**) melalui strategi *bundling*, diskon terbatas waktu, atau reposisi menu.
 
-* Optimize inventory and machine readiness during peak hours, particularly around 10 AM and mid-afternoon
+* Mengoptimalkan inventaris dan kesiapan mesin selama jam sibuk, khususnya sekitar pukul **10.00 pagi** dan pertengahan sore
 
-* Leverage high-traffic hours for higher-margin promotions
+* Memanfaatkan jam-jam dengan lalu lintas pelanggan tinggi untuk promosi produk dengan margin keuntungan lebih besar
 
-* Develop card-based loyalty initiatives to further engage repeat customers and increase transaction frequency
+* Mengembangkan transaksi berbasis kartu untuk lebih meningkatkan keterlibatan pelanggan setia dan frekuensi transaksi
   
-##  Data Limitations
+##  Keterbatasan Data
 
-* Cash transactions cannot be linked to individual customers
-* No customer demographic data available
-* No promotion or pricing change information provided
+* Transaksi tunai tidak dapat dikaitkan dengan pelanggan secara individual
+* Tidak tersedia data demografis pelanggan
+* Tidak tersedia informasi mengenai promosi atau perubahan harga
 
-##  Tools Used
+##  Alat yang digunakan
 
-### Microsoft Excel (PivotTables, formulas, dashboard)
-* Data Cleaning
-* Pivot Tables
-* KPI Calculations
-* Dashboard Design
+### Microsoft Excel (PivotTable, formula, dasbor)
+* Data Cleaning / Pembersihan Data
+* Pivot Table
+* KPI Calculation / Perhitungan KPI
+* Desain Dasbor
 
 #  Author
 
