@@ -9,7 +9,7 @@ Proyek ini menganalisis data penjualan kopi dari mesin penjual otomatis (*vendin
 
 ##  Dataset
 
-* Sumber: Kaggle – Coffee Sales Dataset
+* Sumber: Kaggle – [Coffee Sales Dataset](https://www.kaggle.com/datasets/ihelon/coffee-sales)
 * Jenis Data: Data penjualan tingkat transaksi
 * Granularitas: 1 baris = 1 transaksi
 
